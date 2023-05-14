@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="-120dp">
+        <TextView
+            android:text="账号"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入新账号"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:translationY="-60dp"
+        android:layout_below="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:text="密码"
+          android:textSize="25sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入新密码"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_marginLeft="70sp"
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="20sp" />
+        <Button
+            android:layout_marginLeft="70sp"
+            android:id="@+id/cansel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/view"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <ImageView
+        android:id="@+id/qq_iv_head"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/qq"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qq_iv_head"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/qq_rl_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/qq_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="账号" />
+
+            <EditText
+                android:id="@+id/qq_et_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/qq_tv_name"
+                android:background="@null" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E6E6E6" />
+
+        <RelativeLayout
+            android:id="@+id/qq_rl_userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/qq_tv_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="密码" />
+
+            <EditText
+                android:id="@+id/qq_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/qq_tv_psw"
+                android:background="@null"
+                android:inputType="textPassword" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E6E6E6" />
+
+
+        <CheckBox
+            android:id="@+id/qq_cbk_qq_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否保存密码" />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_below="@+id/layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_horizontal">
+       <Button
+           android:id="@+id/count"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="登录"/>
+       <Button
+           android:id="@+id/register"
+          android:layout_marginLeft="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="注册"/>
+   </LinearLayout>
+
+
+
+
+</RelativeLayout>

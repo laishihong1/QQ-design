@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:gravity="center"
+        android:text="是否要退出..."
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+
+
+    <LinearLayout
+        android:translationY="60sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <Button
+
+            android:id="@+id/btn_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+
+            android:text="确定"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_cansel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="取消"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>

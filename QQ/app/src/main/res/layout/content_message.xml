@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#DFF1F1"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+       <TextView
+           android:textSize="20sp"
+           android:gravity="center"
+           android:textColor="@color/black"
+           android:layout_width="match_parent"
+           android:layout_height="40sp"
+           android:id="@+id/getter_title"
+           android:layout_gravity="left"
+           android:text="接收者" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout"
+        android:scrollbarSize="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="InvalidId"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/content_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/content_message_edit"
+            android:layout_width="320sp"
+            android:hint="请输入内容....."
+            android:layout_height="wrap_content">
+        </EditText>
+
+
+        <Button
+            android:id="@+id/send_message"
+            android:layout_gravity="right"
+            android:text="发送"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
